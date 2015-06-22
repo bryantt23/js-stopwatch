@@ -36,7 +36,7 @@ $(document).ready(function() {
     }else{
       // alert('Pause!');
       running = 0;
-        document.getElementById("startPause").innerHTML = "Resume";
+      document.getElementById("startPause").innerHTML = "Resume";
     }    });
 
 
