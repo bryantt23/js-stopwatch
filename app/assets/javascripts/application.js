@@ -25,52 +25,32 @@ $(document).ready(function() {
   var running = 0;
 
 
-  $('#startPause2').click(function(event){
+  $('#startPause').click(function(event){
     event.preventDefault(); // Prevent link from following its href
 
     if(running == 0){
-      alert('start!');
+      // alert('start!');
       running = 1;
       increment();
       document.getElementById("startPause").innerHTML = "Pause";
     }else{
-      alert('Pause!');
+      // alert('Pause!');
       running = 0;
-      document.getElementById("startPause").innerHTML = "Resume";
+        document.getElementById("startPause").innerHTML = "Resume";
     }    });
 
 
-        $('#reset2').click(function(event){
-        alert('reset!');
-          event.preventDefault(); // Prevent link from following its href
+    $('#reset').click(function(event){
+      // alert('reset!');
+      event.preventDefault(); // Prevent link from following its href
 
-          running = 0;
-          time = 0;
-          document.getElementById("startPause").innerHTML = "Start";
-          document.getElementById("output").innerHTML = "00:00:00";
-        });
-
-
-
-    function startPause()
-    {
-      if(running == 0){
-        running = 1;
-        increment();
-        document.getElementById("startPause").innerHTML = "Pause";
-      }else{
-        running = 0;
-        document.getElementById("startPause").innerHTML = "Resmume";
-      }
-    }
-
-    function reset()
-    {
       running = 0;
       time = 0;
+
       document.getElementById("startPause").innerHTML = "Start";
       document.getElementById("output").innerHTML = "00:00:00";
-    }
+    });
+
 
     function increment()
     {

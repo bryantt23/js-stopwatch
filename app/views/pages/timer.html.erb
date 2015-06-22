@@ -1,20 +1,16 @@
 <p id="output"></p>
+
 <div id="controls">
-  <!-- <button id="startPause" onclick="startPause()">Start</button> -->
-  <button onclick="reset()">Reset</button>
+
+
+<%= link_to 'Start',
+'/actual/url/in/case/javascript/is/broken',
+:id => 'startPause', class: 'button'
+%>
+
+<%= link_to 'Reset',
+'/actual/url/in/case/javascript/is/broken',
+:id => 'reset', class: 'button'
+
+%>
 </div>
-
-<%= link_to 'Link with unobtrusive JavaScript',
-'/actual/url/in/case/javascript/is/broken',
-:id => 'my-link'
-%>
-
-<%= link_to 'startPause',
-'/actual/url/in/case/javascript/is/broken',
-:id => 'startPause2'
-%>
-
-<%= link_to 'reset',
-'/actual/url/in/case/javascript/is/broken',
-:id => 'reset2'
-%>
